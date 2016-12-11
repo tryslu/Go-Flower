@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/_volumeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/str_volumn"
+        android:paddingLeft="@dimen/help_textview_30"
+        android:paddingTop="@dimen/help_textview_30"
+        android:src="@drawable/volume_on" />
+
+    <SeekBar
+        android:id="@+id/_volumeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/_volumeImageView"
+        android:layout_marginBottom="25dp"
+        android:layout_toRightOf="@+id/_volumeImageView"
+        android:paddingRight="@dimen/help_image_100" />
+
+    <ImageView
+        android:id="@+id/_vibreateImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_volumeImageView"
+        android:layout_toLeftOf="@+id/_volumeSeekBar"
+        android:contentDescription="@string/str_vibrate"
+        android:paddingLeft="@dimen/help_textview_30"
+        android:src="@drawable/vibrate_on" />
+
+    <ToggleButton
+        android:id="@+id/_vibrateToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/_vibreateImageView"
+        android:layout_alignLeft="@+id/_volumeSeekBar"
+        android:layout_marginBottom="18dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/pic_ready_wall"
+        android:src="@drawable/ready_wall" />
+
+</RelativeLayout>

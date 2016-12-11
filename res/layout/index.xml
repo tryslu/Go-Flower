@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:contentDescription="@string/pic_ready_flower" >
+    
+    <ImageView
+        android:id="@+id/_indexFlowerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/pic_ready_flower"
+        android:paddingBottom="@dimen/help_textview_10"
+        android:src="@drawable/ready_flower" />
+
+    <ImageView
+        android:id="@+id/_indexWallImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/pic_ready_wall"
+        android:src="@drawable/ready_wall" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/_indexStartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/state_button"
+            android:text="@string/btn_start" />
+
+        <Button
+            android:id="@+id/_indexSettingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/state_button"
+            android:text="@string/btn_settings" />
+
+        <Button
+            android:id="@+id/_indexHelpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/state_button"
+            android:text="@string/btn_help" />
+
+        <Button
+            android:id="@+id/_indexExitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/state_button"
+            android:text="@string/btn_exit" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/_indexBananaImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/pic_ready_banana"
+        android:paddingBottom="@dimen/help_textview_10"
+        android:src="@drawable/ready_banana" />
+
+    <ImageView
+        android:id="@+id/_indexTitleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/pic_ready_title"
+        android:padding="@dimen/help_textview_10"
+        android:src="@drawable/title" />
+
+    <ImageView
+        android:id="@+id/_tabImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/str_ready"
+        android:scaleType="fitXY"
+        android:src="@drawable/tab_to_start" />
+
+</RelativeLayout>

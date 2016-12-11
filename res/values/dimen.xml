@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="help_textview_30">30dip</dimen>
+    <dimen name="help_textview_10">10dip</dimen>
+    <dimen name="help_image_100">100dip</dimen>
+    <dimen name="text_size">20dip</dimen>
+    <dimen name="score">50dp</dimen>
+    
+</resources>

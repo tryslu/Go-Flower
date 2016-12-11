@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/_highScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="@dimen/help_textview_30"
+        android:paddingTop="@dimen/help_textview_30"
+        android:text="@string/str_best"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/col_brown"
+        android:textSize="@dimen/score" />
+
+    <ImageView
+        android:id="@+id/_scoreFlowerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/str_game_over_score"
+        android:paddingBottom="@dimen/help_textview_10"
+        android:src="@drawable/score_flower" />
+
+    <ImageView
+        android:id="@+id/_timesUpImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/str_game_over"
+        android:src="@drawable/timesup" />
+
+    <TextView
+        android:id="@+id/_scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/_highScoreTextView"
+        android:layout_alignTop="@+id/_scoreFlowerImageView"
+        android:layout_marginTop="60dp"
+        android:text="@string/str_game_over_score"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/col_brown"
+        android:textSize="@dimen/score" />
+
+</RelativeLayout>

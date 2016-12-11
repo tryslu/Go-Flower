@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/help_textview_30"
+        android:paddingRight="@dimen/help_textview_30"
+        android:paddingTop="@dimen/help_textview_10"
+        android:text="@string/pic_help"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/col_brown" />
+
+    <TextView
+        android:id="@+id/_addTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/help_textview_30"
+        android:paddingRight="@dimen/help_textview_30"
+        android:paddingTop="@dimen/help_textview_10"
+        android:text="@string/str_help_addfruit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/col_brown" />
+
+    <ImageView
+        android:id="@+id/_addFruitImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/str_help_addfruit"
+        android:paddingLeft="@dimen/help_image_100" />
+
+    <TextView
+        android:id="@+id/_minusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/str_help_minusfruit"
+        android:paddingLeft="@dimen/help_textview_30"
+        android:paddingRight="@dimen/help_textview_30"
+        android:paddingTop="@dimen/help_textview_10"
+        android:text="@string/str_help_minusfruit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/col_brown" />
+
+    <ImageView
+        android:id="@+id/_minusImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/str_help_minusfruit"
+        android:paddingLeft="@dimen/help_image_100" />
+
+    <TextView
+        android:id="@+id/_otherTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/help_textview_30"
+        android:paddingRight="@dimen/help_textview_30"
+        android:paddingTop="@dimen/help_textview_10"
+        android:text="@string/str_help_other"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/col_brown" />
+
+    <ImageView
+        android:id="@+id/_otherImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/str_help_other"
+        android:paddingLeft="@dimen/help_image_100" />
+
+    <TextView
+        android:id="@+id/_skillTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/help_textview_30"
+        android:paddingRight="@dimen/help_textview_30"
+        android:paddingTop="@dimen/help_textview_10"
+        android:text="@string/str_help_skill"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/col_brown" />
+
+    <ImageView
+        android:id="@+id/_skillImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/str_help_skill"
+        android:paddingLeft="@dimen/help_image_100" />
+
+    <TextView
+        android:id="@+id/_enemyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/help_textview_30"
+        android:paddingRight="@dimen/help_textview_30"
+        android:paddingTop="@dimen/help_textview_10"
+        android:text="@string/str_help_enemy"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/col_brown" />
+
+    <ImageView
+        android:id="@+id/_enemyImageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/str_help_enemy"
+        android:paddingLeft="@dimen/help_image_100" />
+
+</LinearLayout>
