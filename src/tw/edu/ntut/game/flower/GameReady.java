@@ -23,71 +23,70 @@ public class GameReady extends Activity
         init();
         _startButton.setOnClickListener(new Button.OnClickListener()
         {
-			@Override
-			public void onClick(View v) 
-			{
-				// TODO Auto-generated method stub		
-				_tabToStart.setVisibility(View.VISIBLE);
-				_tabToStart.setImageBitmap(getBitmap(R.drawable.tab_to_start));
-			}
-		});
+		@Override
+		public void onClick(View v) 
+		{
+			// TODO Auto-generated method stub		
+			_tabToStart.setVisibility(View.VISIBLE);
+			_tabToStart.setImageBitmap(getBitmap(R.drawable.tab_to_start));
+		}
+	});
         
         _tabToStart.setOnClickListener(new ImageView.OnClickListener()
+	{
+		@Override
+		public void onClick(View v) 
 		{
-			@Override
-			public void onClick(View v) 
+			// TODO Auto-generated method stub
+			try
 			{
-				// TODO Auto-generated method stub
-				try
-				{
-					Intent intent = new Intent(GameReady.this, GameRunning.class);
-					startActivity(intent);
-					_tabToStart.setVisibility(View.GONE);
-				}
-				catch(Exception e){}
-			}					
-		});
+				Intent intent = new Intent(GameReady.this, GameRunning.class);
+				startActivity(intent);
+				_tabToStart.setVisibility(View.GONE);
+			}
+			catch(Exception e){}
+		}					
+	});
         
         _settingsButton.setOnClickListener(new Button.OnClickListener()
         {
-			@Override
-			public void onClick(View v) 
+		@Override
+		public void onClick(View v) 
+		{
+			// TODO Auto-generated method stub				
+			try
 			{
-				// TODO Auto-generated method stub				
-				try
-				{
-					Intent intent = new Intent(GameReady.this, Setting.class);
-					startActivity(intent);
-				}
-				catch(Exception e){}	
+				Intent intent = new Intent(GameReady.this, Setting.class);
+				startActivity(intent);
 			}
-		});
+			catch(Exception e){}	
+		}
+	});
         
         _helpButton.setOnClickListener(new Button.OnClickListener()
         {
-
-			@Override
-			public void onClick(View v) 
+		@Override
+		public void onClick(View v) 
+		{
+			// TODO Auto-generated method stub
+			try
 			{
-				// TODO Auto-generated method stub
-				try
-				{
-					Intent intent = new Intent(GameReady.this, Help.class);
-					startActivity(intent);
-				}
-				catch(Exception e){}
+				Intent intent = new Intent(GameReady.this, Help.class);
+				startActivity(intent);
 			}
-		});
+			catch(Exception e){}
+		}
+	});
         
         _exitButton.setOnClickListener(new Button.OnClickListener()
         {
-			@Override
-			public void onClick(View v) 
-			{
-				// TODO Auto-generated method stub
-				finish();
-			}
-		});
+		@Override
+		public void onClick(View v) 
+		{
+			// TODO Auto-generated method stub
+			finish();
+		}
+	});
     }
     
     private void init()
